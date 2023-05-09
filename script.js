@@ -1,3 +1,11 @@
+const favoriteBtn = document.querySelector('.favorite-btn');
+
+favoriteBtn.addEventListener('click', function() {
+  favoriteBtn.classList.toggle('clicked');
+});
+
+
+
 // Armazena as comidas em uma variável
 const foods = document.querySelectorAll('.container');
 
@@ -108,6 +116,14 @@ document.getElementById("close-modal").addEventListener("click", function() {
   document.body.classList.remove("modal-open");
   document.getElementById("cart-modal").style.display = "none";
 });
+
+
+
+
+
+
+
+
 
 
 

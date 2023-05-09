@@ -1,0 +1,103 @@
+.NovoContainer {
+    display: flex; /* Ativa o Flexbox */
+    justify-content: center; /* Alinha horizontalmente no centro */
+    align-items: center; /* Alinha verticalmente no centro */
+    position: relative;
+  }
+  
+  #photo {
+    width: 300px; /* Define a largura da imagem como 300 pixels */
+    height: auto; /* Mantém a proporção da imagem */
+    position: relative;
+  }
+  
+  .buttons {
+    position: absolute;
+    top: 50%; /* Posiciona os botões na metade da altura do elemento pai */
+    left: 50%; /* Posiciona os botões na metade da largura do elemento pai */
+    transform: translate(-50%, -50%); /* Centraliza os botões */
+  }
+
+  .buttons-align{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .horizontal-buttons {
+    padding: 7%;
+    display: flex; /* Ativa o Flexbox */
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: -35%;
+  }
+  
+  .vertical-buttons {
+    padding: 7%;
+    height: 100%; 
+    display: flex; /* Ativa o Flexbox */
+    flex-direction: column; /* Alinha verticalmente os botões */
+    align-items: center; /* Alinha verticalmente os botões */
+    margin-top: 10px;
+    justify-content: space-between;
+  }
+  
+  .mcdonalds-btn,
+  .favorite-btn,
+  .right-arrow-btn {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .mcdonalds-btn {
+    width: 200px;
+    height: 50px;
+    background: #FFFFFF;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    color: #FF9900;
+  }
+
+  
+  .favorite-btn {
+    width: 50px;
+    height: 50px;
+    background: #FFFFFF;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    display: flex; /* Ativa o Flexbox */
+    justify-content: center; /* Alinha o conteúdo no centro do eixo X */
+    align-items: center; /* Alinha o conteúdo no centro do eixo Y */
+    /* Resto do seu estilo */
+  }
+  
+  .favorite-btn img {
+    width: 30px; /* Ajuste o tamanho da imagem conforme necessário */
+    height: 30px;
+    /* Resto do seu estilo */
+  }
+  
+  .favorite-btn.clicked img {
+    content: url('imgs/heart-red.png');
+    /* Resto do seu estilo */
+  }
+  
+  
+  
+  
+  .right-arrow-btn {
+    width: 50px;
+    height: 50px;
+    background: #FFFFFF;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    display: flex; /* Ativa o Flexbox */
+    justify-content: center; /* Alinha o conteúdo no centro do eixo X */
+    align-items: center; /* Alinha o conteúdo no centro do eixo Y */
+  }
+  
+  

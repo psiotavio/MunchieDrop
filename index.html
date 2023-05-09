@@ -7,41 +7,147 @@
   <title>Munchie Drop</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
   <link href="modal.css" rel="stylesheet" type="text/css" />
+  <link href="header.css" rel="stylesheet" type="text/css" />
+  <link href="NewCss.css" rel="stylesheet" type="text/css" />
+  <link href="fooddisplayer.css" rel="stylesheet" type="text/css" />
   <link rel="icon" href="imgs/icon.png">
 </head>
 
 <body>
+  <header class="pgae-header">
+    <div class="logo">
+      <img src="imgs/logoMunchie.png" alt="Munchie logo">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#categories">Categories</a></li>
+        <li><a href="#restaurants">Restaurants</a></li>
+        <li><a href="#about">About Us</a></li>
+      </ul>
+    </nav>
+
+    <divc class="checkout-cart"> 
+      <!-- ícone do carrinho -->
+  <div id="cart-icon">
+    <a href="#">
+      <img class="cart-img" src="imgs/cart.png" alt="Cart Icon">
+      <span id="cart-count"></span>
+    </a>
+  </div>
+  <div class="checkout">
+    <a href="#checkout">Check-out Order</a>
+  </div>
+</div>
+    
+  </header>
+  
 
 
-  <h1 class="page-title">Favorites</h1>
+  <h1 class="page-title">Popular Restaurants</h1>
 
   <div class="search-container">
     <input type="text" id="search-bar" placeholder="Search food...">
   </div>
 
 
-  <!-- ícone do carrinho -->
-  <div id="cart-icon">
-    <a href="#">
-      <img class="cart" src="imgs/cart.png" alt="Cart Icon">
-      <span id="cart-count"></span>
-    </a>
-  </div>
-
-  <!-- modal do carrinho -->
-  <div id="cart-modal" class="modal">
-    <div class="modal-content">
-      <button id="close-modal">X</button>
-      <h2>Cart</h2>
-      <div id="cart-items"></div>
-      <button id="clear-cart">Limpar carrinho</button>
-    </div>
-  </div>
-
-
 
 
   <div id="foods-container">
+
+
+    <div class="food-displayer-container">
+        <div class="food-displayer">
+
+      <!-- Inicio da div -->
+
+    <div class="NovoContainer" id="mcdonalds-container">
+          <img class="restaurants-imgs" src="imgs/restaurants/McDonalds.webp" alt="mcdonalds" id="photo">
+      <div class="buttons">
+        <div class="buttons-align">
+         <div class="horizontal-buttons">
+            <button type="button" class="mcdonalds-btn">McDonald's</button>
+          </div>
+          <div class="vertical-buttons">
+            <button type="button" class="favorite-btn"><img src="imgs/heart-grey.png" alt="Favoritar"></button>
+            <button type="button" class="right-arrow-btn"><img class="button-imgs" src="imgs/arrow.png" alt="arrow"></button>
+          </div>
+          </div>
+      </div>
+    </div>
+
+    <div class="NovoContainer" id="mcdonalds-container">
+      <img class="restaurants-imgs" src="imgs/restaurants/McDonalds.webp" alt="mcdonalds" id="photo">
+  <div class="buttons">
+     <div class="horizontal-buttons">
+        <button type="button" class="mcdonalds-btn">McDonald's</button>
+      </div>
+      <div class="vertical-buttons">
+        <button type="button" class="favorite-btn"><img src="imgs/heart-grey.png" alt="Favoritar"></button>
+        <button type="button" class="right-arrow-btn"><img class="button-imgs" src="imgs/arrow.png" alt="arrow"></button>
+      </div>
+  </div>
+</div>
+
+<div class="NovoContainer" id="mcdonalds-container">
+  <img class="restaurants-imgs" src="imgs/restaurants/McDonalds.webp" alt="mcdonalds" id="photo">
+<div class="buttons">
+ <div class="horizontal-buttons">
+    <button type="button" class="mcdonalds-btn">McDonald's</button>
+  </div>
+  <div class="vertical-buttons">
+    <button type="button" class="favorite-btn"><img src="imgs/heart-grey.png" alt="Favoritar"></button>
+    <button type="button" class="right-arrow-btn"><img class="button-imgs" src="imgs/arrow.png" alt="arrow"></button>
+  </div>
+</div>
+</div>
+
+<div class="NovoContainer" id="mcdonalds-container">
+  <img class="restaurants-imgs" src="imgs/restaurants/McDonalds.webp" alt="mcdonalds" id="photo">
+<div class="buttons">
+<div class="buttons-align">
+ <div class="horizontal-buttons">
+    <button type="button" class="mcdonalds-btn">McDonald's</button>
+  </div>
+  <div class="vertical-buttons">
+    <button type="button" class="favorite-btn"><img src="imgs/heart-grey.png" alt="Favoritar"></button>
+    <button type="button" class="right-arrow-btn"><img class="button-imgs" src="imgs/arrow.png" alt="arrow"></button>
+  </div>
+  </div>
+</div>
+</div>
+
+<div class="NovoContainer" id="mcdonalds-container">
+<img class="restaurants-imgs" src="imgs/restaurants/McDonalds.webp" alt="mcdonalds" id="photo">
+<div class="buttons">
+<div class="horizontal-buttons">
+<button type="button" class="mcdonalds-btn">McDonald's</button>
+</div>
+<div class="vertical-buttons">
+<button type="button" class="favorite-btn"><img src="imgs/heart-grey.png" alt="Favoritar"></button>
+<button type="button" class="right-arrow-btn"><img class="button-imgs" src="imgs/arrow.png" alt="arrow"></button>
+</div>
+</div>
+</div>
+
+<div class="NovoContainer" id="mcdonalds-container">
+<img class="restaurants-imgs" src="imgs/restaurants/McDonalds.webp" alt="mcdonalds" id="photo">
+<div class="buttons">
+<div class="horizontal-buttons">
+<button type="button" class="mcdonalds-btn">McDonald's</button>
+</div>
+<div class="vertical-buttons">
+<button type="button" class="favorite-btn"><img src="imgs/heart-grey.png" alt="Favoritar"></button>
+<button type="button" class="right-arrow-btn"><img class="button-imgs" src="imgs/arrow.png" alt="arrow"></button>
+</div>
+</div>
+</div>
+
+
+<!-- Fim da div -->
+</div>
+</div>
+    
 
     <!-- Sushi -->
 

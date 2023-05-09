@@ -101,13 +101,20 @@ body {
 }
 
 .page-title {
-  margin-top: 10vh;
+
+  margin-top: 25vh;
   text-align: center;
   position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 18px;
+  letter-spacing: 0.5px;
+  color: #FF9900;
+
 }
+
+
 
 
 
