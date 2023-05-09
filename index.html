@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Munchie Drop</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="modal.css" rel="stylesheet" type="text/css" />
+  <link rel="icon" href="imgs/icon.png">
+</head>
+
+<body>
+
+
+  <h1 class="page-title">Favorites</h1>
+
+  <div class="search-container">
+    <input type="text" id="search-bar" placeholder="Search food...">
+  </div>
+
+
+  <!-- ícone do carrinho -->
+  <div id="cart-icon">
+    <a href="#">
+      <img class="cart" src="imgs/cart.png" alt="Cart Icon">
+      <span id="cart-count"></span>
+    </a>
+  </div>
+
+  <!-- modal do carrinho -->
+  <div id="cart-modal" class="modal">
+    <div class="modal-content">
+      <button id="close-modal">X</button>
+      <h2>Cart</h2>
+      <div id="cart-items"></div>
+      <button id="clear-cart">Limpar carrinho</button>
+    </div>
+  </div>
+
+
+
+
+  <div id="foods-container">
+
+    <!-- Sushi -->
+
+    <div class="container" id="sushi" data-price="12.99">
+      <div class="contentL">
+        <img class="foods-imgs" src="imgs\foods\sushi.webp" alt="Sushi">
+      </div>
+      <div class="contentR">
+        <div class="food">
+          <h1 class="food-title">Sushi</h1>
+          <p class="food-description">Savor the freshest sushi at our restaurant. Experience authentic Japanese flavors
+            with every bite.</p>
+        </div>
+      </div>
+      <div class="rating">
+        <div class="stars-container">
+          <span class="stars" data-value="1">&#9733;</span>
+          <span class="stars" data-value="1">&#9733;</span>
+          <span class="stars" data-value="1">&#9733;</span>
+          <span class="stars" data-value="0">&#9733;</span>
+          <span class="stars" data-value="0">&#9733;</span>
+        </div>
+
+        <div class="addCart">
+
+          <div class="price">
+            <p>12.99$</p>
+          </div>
+          <div class="addtocart-button">
+            <button class="add-to-cart">
+              <span class="span-mother">
+                <span>A</span>
+                <span>d</span>
+                <span>d</span>
+                <span>⠀</span>
+                <span>t</span>
+                <span>o</span>
+                <span>⠀</span>
+                <span>c</span>
+                <span>a</span>
+                <span>r</span>
+                <span>t</span>
+              </span>
+              <span class="span-mother2">
+                <span>A</span>
+                <span>d</span>
+                <span>d</span>
+                <span>⠀</span>
+                <span>t</span>
+                <span>o</span>
+                <span>⠀</span>
+                <span>c</span>
+                <span>a</span>
+                <span>r</span>
+                <span>t</span>
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pizza -->
+
+    <div class="container" id="pizza" data-price="18.99">
+      <div class="contentL">
+        <img class="foods-imgs" src="imgs\foods\pizza.webp" alt="Pizza">
+      </div>
+      <div class="contentR">
+        <div class="food">
+          <h1 class="food-title">Pizza</h1>
+          <p class="food-description">Deliciously cheesy and savory pizzas, baked to perfection in a wood-fired oven.
+            Your taste buds will thank you at every bite!</p>
+
+        </div>
+      </div>
+      <div class="rating">
+        <div class="stars-container">
+          <span class="stars" data-value="1">&#9733;</span>
+          <span class="stars" data-value="1">&#9733;</span>
+          <span class="stars" data-value="1">&#9733;</span>
+          <span class="stars" data-value="1">&#9733;</span>
+          <span class="stars" data-value="1">&#9733;</span>
+        </div>
+        <div class="addCart">
+          <div class="price">
+            <p>18.99$</p>
+          </div>
+          <button class="add-to-cart">
+            <span class="span-mother">
+              <span>A</span>
+              <span>d</span>
+              <span>d</span>
+              <span>⠀</span>
+              <span>t</span>
+              <span>o</span>
+              <span>⠀</span>
+              <span>c</span>
+              <span>a</span>
+              <span>r</span>
+              <span>t</span>
+            </span>
+            <span class="span-mother2">
+              <span>A</span>
+              <span>d</span>
+              <span>d</span>
+              <span>⠀</span>
+              <span>t</span>
+              <span>o</span>
+              <span>⠀</span>
+              <span>c</span>
+              <span>a</span>
+              <span>r</span>
+              <span>t</span>
+            </span>
+          </button>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Salad -->
+
+    <div class="container" id="salad" data-price="8.99">
+      <div class="contentL">
+        <img class="foods-imgs" src="imgs\foods\salad.webp" alt="Salad">
+      </div>
+      <div class="contentR">
+        <div class="food">
+          <h1 class="food-title">Salad</h1>
+          <p class="food-description">Fresh, healthy, and colorful. Our salads are a delicious way to fuel your day and
+            satisfy your taste buds.</p>
+        </div>
+      </div>
+      <div class="rating">
+        <div class="stars-container">
+          <span class="stars" data-value="1">&#9733;</span>
+          <span class="stars" data-value="1">&#9733;</span>
+          <span class="stars" data-value="0">&#9733;</span>
+          <span class="stars" data-value="0">&#9733;</span>
+          <span class="stars" data-value="0">&#9733;</span>
+        </div>
+        <div class="addCart">
+          <div class="price">
+            <p>8.99$</p>
+          </div>
+          <button class="add-to-cart">
+
+            <span class="span-mother">
+              <span>A</span>
+              <span>d</span>
+              <span>d</span>
+              <span>⠀</span>
+              <span>t</span>
+              <span>o</span>
+              <span>⠀</span>
+              <span>c</span>
+              <span>a</span>
+              <span>r</span>
+              <span>t</span>
+            </span>
+            <span class="span-mother2">
+              <span>A</span>
+              <span>d</span>
+              <span>d</span>
+              <span>⠀</span>
+              <span>t</span>
+              <span>o</span>
+              <span>⠀</span>
+              <span>c</span>
+              <span>a</span>
+              <span>r</span>
+              <span>t</span>
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pasta -->
+
+    <div class="container" id="pasta" data-price="14.99">
+      <div class="contentL">
+        <img class="foods-imgs" src="imgs\foods\pasta.webp" alt="Salad">
+      </div>
+      <div class="contentR">
+        <div class="food">
+          <h1 class="food-title">Pasta</h1>
+          <p class="food-description">Indulge in the ultimate comfort food with our flavorful pasta dishes. Perfectly
+            cooked noodles tossed in rich sauces will leave you craving for more.</p>
+        </div>
+      </div>
+      <div class="rating">
+        <div class="stars-container">
+          <span class="stars" data-value="1">&#9733;</span>
+          <span class="stars" data-value="1">&#9733;</span>
+          <span class="stars" data-value="1">&#9733;</span>
+          <span class="stars" data-value="0">&#9733;</span>
+          <span class="stars" data-value="0">&#9733;</span>
+        </div>
+        <div class="addCart">
+          <div class="price">
+            <p>14.99$</p>
+          </div>
+          <button class="add-to-cart">
+            <span class="span-mother">
+              <span>A</span>
+              <span>d</span>
+              <span>d</span>
+              <span>⠀</span>
+              <span>t</span>
+              <span>o</span>
+              <span>⠀</span>
+              <span>c</span>
+              <span>a</span>
+              <span>r</span>
+              <span>t</span>
+            </span>
+            <span class="span-mother2">
+              <span>A</span>
+              <span>d</span>
+              <span>d</span>
+              <span>⠀</span>
+              <span>t</span>
+              <span>o</span>
+              <span>⠀</span>
+              <span>c</span>
+              <span>a</span>
+              <span>r</span>
+              <span>t</span>
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+
+  </div>
+  <script src="script.js"></script>
+
+
+</body>
+
+
+</html>

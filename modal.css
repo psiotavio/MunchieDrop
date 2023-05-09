@@ -1,0 +1,100 @@
+body.modal-open {
+  pointer-events: none;
+  overflow: hidden;
+}
+
+/* Correção para permitir o clique no botão de fechar dentro do modal */
+body.modal-open .modal-content {
+  pointer-events: auto;
+}
+
+/* estilo do modal */
+.modal {
+  width: 50%;
+  max-width: 500px;
+  margin: 0 auto;
+  position: fixed;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+}
+
+
+
+/* estilo do conteúdo do modal */
+.modal-content {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  text-align: center;
+}
+
+/* estilo do botão de fechar */
+#close-modal {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #fff;
+  border: none;
+  border-radius: 50%;
+  font-size: 24px;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+
+/* estilo do botão Limpar Carrinho */
+#clear-cart {
+  margin-top: 20px;
+}
+
+
+
+#cart-icon {
+  align-self: center;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+#cart-icon:hover #cart-modal {
+  display: block;
+}
+
+#cart-icon .fa-shopping-cart {
+  font-size: 24px;
+}
+
+#cart-count {
+  position: absolute;
+  top: 25px;
+  right: -5px;
+  border: solid 0.75px black;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  font-size: 12px;
+  line-height: 20px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+
+.cart {
+  width: 3vw;
+}
