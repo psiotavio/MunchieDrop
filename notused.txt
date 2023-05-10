@@ -1,0 +1,60 @@
+    <!-- Sushi -->
+
+    <div class="container" id="sushi" data-price="12.99">
+      <div class="contentL">
+        <img class="foods-imgs" src="imgs\foods\sushi.webp" alt="Sushi">
+      </div>
+      <div class="contentR">
+        <div class="food">
+          <h1 class="food-title">Sushi</h1>
+          <p class="food-description">Savor the freshest sushi at our restaurant. Experience authentic Japanese flavors
+            with every bite.</p>
+        </div>
+      </div>
+      <div class="rating">
+        <div class="stars-container">
+          <span class="stars" data-value="1">&#9733;</span>
+          <span class="stars" data-value="1">&#9733;</span>
+          <span class="stars" data-value="1">&#9733;</span>
+          <span class="stars" data-value="0">&#9733;</span>
+          <span class="stars" data-value="0">&#9733;</span>
+        </div>
+
+        <div class="addCart">
+
+          <div class="price">
+            <p>12.99$</p>
+          </div>
+          <div class="addtocart-button">
+            <button class="add-to-cart">
+              <span class="span-mother">
+                <span>A</span>
+                <span>d</span>
+                <span>d</span>
+                <span>⠀</span>
+                <span>t</span>
+                <span>o</span>
+                <span>⠀</span>
+                <span>c</span>
+                <span>a</span>
+                <span>r</span>
+                <span>t</span>
+              </span>
+              <span class="span-mother2">
+                <span>A</span>
+                <span>d</span>
+                <span>d</span>
+                <span>⠀</span>
+                <span>t</span>
+                <span>o</span>
+                <span>⠀</span>
+                <span>c</span>
+                <span>a</span>
+                <span>r</span>
+                <span>t</span>
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>

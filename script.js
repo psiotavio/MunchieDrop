@@ -5,9 +5,46 @@ favoriteBtn.addEventListener('click', function() {
 });
 
 
+// Crie um array ou objeto para armazenar os itens favoritados
+let favorites = [];
+
+// Selecione todos os botões de favoritos e adicione um event listener a cada um
+const favoriteBtns = document.querySelectorAll('.favorite-btn');
+favoriteBtns.forEach(btn => {
+  btn.addEventListener('click', function() {
+    // Adicione ou remova o item do array de favoritos, dependendo se o botão está clicado ou não
+    const restaurantContainer = btn.closest('.NovoContainer');
+    if (btn.classList.contains('clicked')) {
+      btn.classList.remove('clicked');
+      favorites = favorites.filter(favorite => favorite !== restaurantContainer);
+    } else {
+      btn.classList.add('clicked');
+      favorites.push(restaurantContainer);
+    }
+    // Exiba os itens favoritados na seção "Favorites"
+    displayFavorites();
+  });
+});
+
+// Função para gerar o HTML dos itens favoritados e exibi-los na seção "Favorites"
+function displayFavorites() {
+  const favoritesContainer = document.getElementById('favorites-container');
+  // Limpe o conteúdo anterior dos itens favoritados
+  favoritesContainer.innerHTML = '';
+  // Gere o HTML para cada item favoritado e adicione-o ao container de favoritos
+  favorites.forEach(favorite => {
+    favoritesContainer.innerHTML += `
+      <div class="favorite-item">
+        ${favorite.innerHTML}
+      </div>
+    `;
+  });
+}
+
+
 
 // Armazena as comidas em uma variável
-const foods = document.querySelectorAll('.container');
+const foods = document.querySelectorAll('.NovoContainer');
 
 // Seleciona a barra de pesquisa
 const searchBar = document.querySelector('#search-bar');
@@ -20,7 +57,7 @@ searchBar.addEventListener('input', () => {
   // Itera sobre cada comida
   foods.forEach(food => {
     // Armazena o título da comida em uma variável
-    const title = food.querySelector('.food-title').textContent.toLowerCase();
+    const title = food.querySelector('.foodplace-btn').textContent.toLowerCase();
 
     // Verifica se o título da comida inclui o termo de busca
     const matched = title.includes(searchTerm);
@@ -40,7 +77,7 @@ searchBar.addEventListener('keydown', event => {
     // Executa a busca
     const searchTerm = searchBar.value.toLowerCase();
     foods.forEach(food => {
-      const title = food.querySelector('.food-title').textContent.toLowerCase();
+      const title = food.querySelector('.foodplace-btne').textContent.toLowerCase();
       const matched = title.includes(searchTerm);
       food.style.display = matched ? 'flex' : 'none';
     });

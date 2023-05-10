@@ -1,0 +1,98 @@
+
+.addCart {
+    gap: 10px;
+    display: flex;
+    flex-direction: horizontal;
+    justify-content: space-between;
+    align-self: flex-end;
+  }
+  
+  .container .add-to-cart {
+    margin: 0 auto;
+    font-weight: bold;
+    color: white;
+    border-radius: 2rem;
+    width: 95.02px;
+    height: 42.66px;
+    border: none;
+    background-color: #3653F8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container .add-to-cart .span-mother {
+    display: flex;
+    overflow: hidden;
+  }
+  
+  .container .add-to-cart:hover .span-mother {
+    position: absolute;
+  }
+  
+  .container .add-to-cart:hover .span-mother span {
+    transform: translateY(1.2em);
+  }
+  
+  .container .add-to-cart .span-mother span:nth-child(1) {
+    transition: .2s;
+  }
+  
+  .container .add-to-cart .span-mother span:nth-child(2) {
+    transition: .3s;
+  }
+  
+  .container .add-to-cart .span-mother span:nth-child(3) {
+    transition: .4s;
+  }
+  
+  .container .add-to-cart .span-mother span:nth-child(4) {
+    transition: .5s;
+  }
+  
+  .container .add-to-cart .span-mother span:nth-child(5) {
+    transition: .6s;
+  }
+  
+  .container .add-to-cart .span-mother span:nth-child(6) {
+    transition: .7s;
+  }
+  
+  .container .add-to-cart .span-mother2 {
+    display: flex;
+    position: absolute;
+    overflow: hidden;
+  }
+  
+  .container .add-to-cart .span-mother2 span {
+    transform: translateY(-1.2em);
+  }
+  
+  .container .add-to-cart:hover .span-mother2 span {
+    transform: translateY(0);
+  }
+  
+  .container .add-to-cart .span-mother2 span {
+    transition: .2s;
+  }
+  
+  .container .add-to-cart .span-mother2 span:nth-child(2) {
+    transition: .3s;
+  }
+  
+  .container .add-to-cart .span-mother2 span:nth-child(3) {
+    transition: .4s;
+  }
+  
+  .container .add-to-cart .span-mother2 span:nth-child(4) {
+    transition: .5s;
+  }
+  
+  .container .add-to-cart .span-mother2 span:nth-child(5) {
+    transition: .6s;
+  }
+  
+  .container .add-to-cart .span-mother2 span:nth-child(6) {
+    transition: .7s;
+  }
+  

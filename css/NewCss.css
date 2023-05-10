@@ -1,49 +1,56 @@
-.NovoContainer {
+.NovoContainer,  .favorite-item {
     display: flex; /* Ativa o Flexbox */
     justify-content: center; /* Alinha horizontalmente no centro */
     align-items: center; /* Alinha verticalmente no centro */
     position: relative;
+    transition: 0.5s;
   }
   
-  #photo {
-    width: 300px; /* Define a largura da imagem como 300 pixels */
-    height: auto; /* Mantém a proporção da imagem */
-    position: relative;
-  }
-  
-  .buttons {
-    position: absolute;
-    top: 50%; /* Posiciona os botões na metade da altura do elemento pai */
-    left: 50%; /* Posiciona os botões na metade da largura do elemento pai */
-    transform: translate(-50%, -50%); /* Centraliza os botões */
+  .favorite-item:hover,  .NovoContainer:hover{
+    transition: 0.5s;
+    cursor: pointer;
+    filter: brightness(80%);
   }
 
-  .buttons-align{
+
+  #photo {
+    border-radius: 25px;
+    object-fit: cover;
+    width: 450px; /* Define a largura da imagem como 300 pixels */
+    height: 250px; /* Mantém a proporção da imagem */
     position: relative;
+  }
+  
+
+  .buttons-align {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
   }
   
   .horizontal-buttons {
-    padding: 7%;
-    display: flex; /* Ativa o Flexbox */
-    flex-direction: row;
-    justify-content: space-between;
-    margin-bottom: -35%;
+    position: absolute;
+    display: flex;
+    bottom: 10px;
+    left: 15px;
   }
   
   .vertical-buttons {
-    padding: 7%;
-    height: 100%; 
-    display: flex; /* Ativa o Flexbox */
-    flex-direction: column; /* Alinha verticalmente os botões */
-    align-items: center; /* Alinha verticalmente os botões */
-    margin-top: 10px;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    bottom: 10px;
+    display: flex;
+    flex-direction: column;
     justify-content: space-between;
   }
-  
-  .mcdonalds-btn,
+
+  .foodplace-btn,
   .favorite-btn,
   .right-arrow-btn {
     padding: 10px;
@@ -53,7 +60,7 @@
     cursor: pointer;
   }
   
-  .mcdonalds-btn {
+  .foodplace-btn {
     width: 200px;
     height: 50px;
     background: #FFFFFF;
@@ -75,16 +82,17 @@
     /* Resto do seu estilo */
   }
   
-  .favorite-btn img {
-    width: 30px; /* Ajuste o tamanho da imagem conforme necessário */
-    height: 30px;
+  .favorite-btn p {
+    font-size: 32px;
+    text-align: center;
     /* Resto do seu estilo */
   }
   
-  .favorite-btn.clicked img {
-    content: url('imgs/heart-red.png');
+   .favorite-btn.clicked p {
+    color: #ff6600;
     /* Resto do seu estilo */
   }
+  
   
   
   
@@ -100,4 +108,6 @@
     align-items: center; /* Alinha o conteúdo no centro do eixo Y */
   }
   
+
+
   

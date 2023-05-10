@@ -8,15 +8,21 @@
     gap: 50px;
     display: flex;
     flex-direction: row;
-    max-height: 1000px; /* Defina o valor apropriado para a largura máxima */
-    margin: 0 auto; /* Centraliza o contêiner na página */
+    margin: 0 auto;
   }
   
   .food-item {
     align-content: center;
-    height: 300px;
     margin-right: 10px;
-    /* Resto do seu estilo */
   }
   
+  #foods-container{
+    align-self: center;
+    width: 70rem;
+    padding:2vh;
+  }
+
+  #foods-container .page-title {
+    color: #FF9900;
+  }
   
