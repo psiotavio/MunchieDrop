@@ -51,6 +51,12 @@ header {
     font-size: 16px;
     
   }
+
+  #atual{
+    color: #e67e22;
+    border-bottom: 2px solid #e67e22;
+  }
+  
   
   nav a:hover {
     padding: 10px;

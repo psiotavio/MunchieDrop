@@ -1,7 +1,7 @@
 .food-displayer-container {
     overflow-x: auto;
     white-space: nowrap; /* Evita quebrar a linha */
-
+    padding: 25px;
   }
   
   .food-displayer {

@@ -100,26 +100,22 @@ body {
   color: gray;
 }
 
-
-
-
-
 .search-container {
-  margin-top: 50em;  margin-left: 65%;
+  margin-left: 65%;
   display: flex;
   justify-content: center;
-  margin-bottom: 1em;
-  margin-top: 10vh;
+  margin-top: 5em;
   text-align: center;
   position: relative;
   font-style: normal;
-  width: 10em;
+  width: 8em;
+  height: 40px;
 }
 
 #search-bar {
   padding: 0.5em;
-  border: 3px solid #FF9900;
-  border-radius: 5px;
+  border: 2px solid #FF9900;
+  border-radius: 25px;
   width: 10em;
-  font-size: 1em;
+  font-size: 0.8em;
 }
