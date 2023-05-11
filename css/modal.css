@@ -8,10 +8,15 @@ body.modal-open .modal-content {
   pointer-events: auto;
 }
 
+
+
 /* estilo do modal */
-.modal {
-  width: 50%;
-  max-width: 500px;
+.modal, .modal-pizza {
+  max-height: 600px;
+  padding: 25px;
+  padding: 2%;
+  width: 100%;
+  max-width: 800px;
   margin: 0 auto;
   position: fixed;
   top: 50%;
@@ -29,13 +34,19 @@ body.modal-open .modal-content {
 
 
 /* estilo do conteúdo do modal */
-.modal-content {
+.modal-content { 
+  gap: 5px;
   background-color: white;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   padding: 20px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centering the content horizontally */
+  align-items: center; /* Centering the content vertically */
 }
+
 
 /* estilo do botão de fechar */
 #close-modal {
@@ -97,8 +108,54 @@ body.modal-open .modal-content {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 
-
-
 .cart {
   width: 3vw;
+}
+
+
+
+
+.product{
+  gap: 1%;
+  height: 8rem;
+  width: 100%;
+  max-width: 800px;
+  align-items: center;
+  border-bottom: solid 1px lightgray;
+  border-top: solid 1px lightgray;
+  display: flex;
+  flex-direction: row;
+}
+
+.products{
+  padding: 0 auto;
+  overflow-y: auto;
+  max-height: 500px;
+}
+
+
+.Title-description{
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+}
+
+.Title-description h1{
+  font-size: 18px;
+}
+
+.Title-description p{
+  font-size: 12px;
+}
+
+.close,.close-pizza{
+  justify-content: center;
+  align-self:flex-end;
+  display: flex;
+  text-align: center;
+  width: 2rem;
+  height: 2rem;
+  background-color: lightgray;
+  border-radius: 50%;
+  cursor: pointer;
 }

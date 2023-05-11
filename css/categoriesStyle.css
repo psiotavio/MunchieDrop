@@ -35,6 +35,14 @@ body {
   position: relative;
 }
 
+.menu-imgs{
+  border-radius: 25px;
+  object-fit: cover;
+  width: 100px;
+  height: 100px;
+  position: relative;
+}
+
 
 .food-displayer {
   gap: 25px;
